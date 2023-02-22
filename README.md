@@ -1,11 +1,19 @@
 # CMPT-785-miniEFS
 
-Compile and prepare the binary:
+Compile all headers:
 
 ```bash
 cd /your-path-to/CMPT-785-miniEFS
 
-g++ main.cpp -o fileserver -lcrypto
+g++ -c -I. auth.cpp
+```
+
+Compile the main binary:
+
+```bash
+cd /your-path-to/CMPT-785-miniEFS
+
+g++ -I. auth.o main.cpp -o fileserver -lcrypto
 
 chmod +x fileserver
 ```
