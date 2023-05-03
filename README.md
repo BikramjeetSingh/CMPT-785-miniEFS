@@ -1,4 +1,18 @@
 # CMPT-785-miniEFS
+
+## Available Commands
+
+*   `adduser <username>` (for admins only)
+*   `cd <directory>`
+*   `pwd`
+*   `ls`
+*   `cat <filename>`
+*   `share <filename> <username>`
+*   `mkdir <directoryname>`
+*   `mkfile <filename> <contents>`
+*   `exit`
+
+## Installation
 In addition to openssl, please also make sure jsoncpp is installed before you compile the code
 
 ```bash
